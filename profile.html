@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - PageBreeze</title>
+    <link rel="icon" type="image" href="Shopping Cart Logo.webp">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="/"><img class="pagebreeze_home" src="/Shopping Cart Logo.webp" alt="PageBreeze Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a href="Shopping_Cart_PageBreeze.html">Home</a>
+        </nav>
+        <div class="action_bar">
+            <div class="action_container">
+                <i class="fa-solid fa-user action_icon"></i>
+                <span class="action_name">Profile</span>
+            </div>
+            <a class="action_container" href="bag.html">
+                <i class="fa-solid fa-cart-shopping action_icon"></i>
+                <span class="action_name">Cart</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <h2>User Profile</h2>
+            <div class="profile-info">
+                <img id="profile-picture" src="default-avatar.png" alt="Profile Picture">
+                <div class="user-details">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" />
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" />
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" />
+                </div>
+            </div>
+            <button class="save-btn" onclick="saveProfile()">Save Changes</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="visitagain">
+            Thank You! Visit again! Stay safe, stay well.
+        </div>
+        <div class="copyright">
+            © 2024 www.pagebreeze.com. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>

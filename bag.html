@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - PageBreeze</title>
+    <link rel="stylesheet" href="bag.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="/"><img class="pagebreeze_home" src="/Shopping Cart Logo.webp" alt="PageBreeze Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a href="Shopping_Cart_PageBreeze.html">Home</a>
+        </nav>
+        <!-- <div class="action_bar">
+            <div class="action_container">
+                <i class="fa-solid fa-user action_icon"></i>
+                <span class="action_name">Profile</span>
+            </div> -->
+
+            <a class="action_container" href="bag.html" style="position: relative; right: 100px;">
+                <i class="fa-solid fa-cart-shopping action_icon"></i>
+                <span class="action_name">Cart</span>
+                <span class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+            <h2>Your Shopping Bag</h2>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+                <p>Total Items: <span class="total-items">0</span></p>
+                <p>Total Price: <span class="total-price">Rs 0</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="visitagain">
+            Thank You! Visit again! Stay safe, stay well.
+        </div>
+        <div class="copyright">
+            © 2024 www.pagebreeze.com. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="bag.js"></script>
+</body>
+</html>

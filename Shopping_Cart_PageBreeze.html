@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PageBreeze</title>
+    <link rel="icon" type="image" href="Shopping Cart Logo.webp">
+    <link rel="stylesheet" href="Shopping_Cart_PageBreeze.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            <a href="#"><img class="pagebreeze_home" src="/Shopping Cart Logo.webp" alt="PageBreeze Home"></a>
+        </div>
+        <nav class="nav_bar">
+            <a href="Shopping_Cart_PageBreeze.html">Home</a>
+            <a href="Page/shopping.html">Shopping<sup><img src = "new.gif"></sup></a>
+        </nav>
+        <div class="search_bar">
+            <i class="fa-solid fa-magnifying-glass search_icon"></i>
+            <input class="search_input" placeholder="Search for books, authors, genres, and more...">
+        </div>
+        <div class="action_bar">
+            <a class="action_container" href="profile/profile.html" style="padding-right: 50px;">
+                <i class="fa-solid fa-user action_icon" ></i>
+                <span class="action_name">Profile</span>
+            </a>
+
+            <a class="action_container" href="bag/bag.html">
+                <i class="fa-solid fa-cart-shopping action_icon"></i>
+                <span class="action_name">Cart</span>
+                <span id="change-it" class="bag-item-count">0</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="banner_container" style="margin-top: 0.5px;">
+            <div class="banner_image"></div>
+        </div>
+
+        <div class="category_heading">Discover Your Genre</div>
+        <div class="category_items">
+            <a href="#"><img class="Sale_Item" src="/Book/1.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/2.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/3.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/4.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/5.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/6.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/7.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/8.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/9.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/10.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/11.png"></a>
+            <a href="#"><img class="Sale_Item" src="/Book/12.png"></a>
+        </div>
+
+    
+   
+   
+    <div class="items-container">
+      
+    </div>
+
+   </main>
+   
+   
+    <footer>
+        <div class="footer_container">
+
+            <div class="footer_column">
+                <h3>Do You Need Help ?</h3>
+                <p><b>Email us : </b>support@pagebreeze.com</p>
+                <br>
+                <h3>Support Hours</h3>
+                <p><b>Monday-Saturday : 10:00 - 18:30</b></p>
+            </div>
+
+            <div class="footer_column">
+                <h3>Online Shopping</h3>
+                <a href="#">Story</a>
+                <a href="#">Historical</a>
+                <a href="#">Science</a>
+                <a href="#">Romance</a>
+                <a href="#">Adventures</a>
+                <a href="#">Horror</a>
+                <a href="#">Giftcard</a>
+            </div>
+
+            <div class="footer_column">
+                <h3>Contact Us</h3>
+                <p><b>Contact no.</b>+9198745897</p>
+                <p><b>Email : </b>pagebreeze.shopping@pagebreeze.com</p>
+            </div>
+            
+        </div>
+        <hr>
+
+        <div class="visitagain">
+            Thank You !!! Visit again !!! Stay safe stay well
+        </div>
+
+        <div class="copyright">
+            © 2024 www.pagebreeze.com. All rights reserved.
+        </div>
+    </footer>
+    <!-- <script src="items.js"></script> -->
+    <script src="Shopping_Cart_PageBreeze.js"></script>
+</body>
+</html>
+<script>
+    const bannerImages = [
+        '/Banner/1.png',
+        '/Banner/2.png',
+        '/Banner/3.png',
+        '/Banner/4.png',
+        '/Banner/5.png'
+    ];
+    let currentIndex = 0;
+    function changeBanner() {
+        const banner = document.querySelector('.banner_image');
+        banner.style.backgroundImage = `url('${bannerImages[currentIndex]}')`;
+        currentIndex = (currentIndex + 1) % bannerImages.length;
+    }
+    changeBanner();
+    setInterval(changeBanner, 5000);
+</script>
+
